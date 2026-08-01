@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReHani Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="/js/javascript.js" defer></script>
+</head>
+<body class="inner-page">
+  <header class="site-header" data-header>
+    <nav class="nav-group nav-left" aria-label="Primary">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/html/about.html">Chven Shesaxeb</a>
+      <a class="nav-link active" href="/html/menu.html">Menu</a>
+    </nav>
+
+    <a class="brand" href="/" aria-label="Rehani home">
+      <span class="brand-kicker">Premium Quality</span>
+      <span class="brand-name">Rehani</span>
+      <span class="brand-year"></span>
+    </a>
+
+    <div class="nav-group nav-right">
+      <a class="nav-link" href="/html/gallery.html">Suratebi</a>
+      <a class="nav-link" href="/html/contacts.html">Contacts</a>
+      <button class="icon-button mobile-toggle" type="button" aria-label="Open navigation" data-menu-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+      <a class="icon-button basket-link" href="/html/basket.html" aria-label="Basket">
+        <i data-lucide="shopping-basket"></i>
+        <span class="basket-count" data-basket-count>0</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="/">Home</a>
+    <a href="/html/about.html">Chven Shesaxeb</a>
+    <a href="/html/menu.html">Menu</a>
+    <a href="/html/gallery.html">Suratebi</a>
+    <a href="/html/contacts.html">Contacts</a>
+    <a href="/html/basket.html">Basket</a>
+  </div>
+
+  <main>
+    <section class="page-hero menu-page-hero" aria-labelledby="menu-page-title">
+      <div class="page-hero-copy">
+        <p class="eyebrow">ReHani</p>
+        <h1 id="menu-page-title">Mtliani Menu</h1>
+        <p>Airchie Sakvebi An Sasmeli Romelic Gsurs Da Damate Kalatashi</p>
+      </div>
+    </section>
+
+    <section class="full-menu-section" aria-label="Full restaurant menu">
+      <div class="page-section-head">
+        <p class="eyebrow">Food and Drinks</p>
+        <h2>Ufro Didi Menu Chveni Samzareulodan</h2>
+      </div>
+
+      <div class="menu-filter" role="tablist" aria-label="Menu filters">
+        <button class="menu-filter-button active" type="button" data-menu-filter="all">All</button>
+        <button class="menu-filter-button" type="button" data-menu-filter="food">Food</button>
+        <button class="menu-filter-button" type="button" data-menu-filter="drink">Drinks</button>
+        <button class="menu-filter-button" type="button" data-menu-filter="dessert">Dessert</button>
+      </div>
+
+      <div class="full-menu-grid" data-full-menu></div>
+    </section>
+
+    <section class="staff-picks" aria-labelledby="staff-picks-title">
+      <div class="page-section-head">
+        <p class="eyebrow">Xshiri Shekvetebi</p>
+        <h2 id="staff-picks-title">Recommended Adamianebisgan Romlebac Gasinjes Kerdzebi Da Moeconat</h2>
+      </div>
+      <div class="staff-grid">
+        <article class="staff-card">
+          <span class="staff-role">Chef Nika</span>
+          <h3>Khinkali Classic</h3>
+          <p>Sauketeso Gemo Da Ganumeorebeli Eset Xinklas Ver Shechamt Versad</p>
+        </article>
+        <article class="staff-card">
+          <span class="staff-role">Barista Ana</span>
+          <h3>Caramel Macchiato</h3>
+          <p>Rbili Rdzit. Dzlieri Yavit. Da ......</p>
+        </article>
+        <article class="staff-card">
+          <span class="staff-role">Server Mari</span>
+          <h3>Chocolate Layer</h3>
+          <p>Mariamis Top Namcxvari Romelsac Zemodan Ayria Yavis Namcecebi Extra Gemostvis</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
